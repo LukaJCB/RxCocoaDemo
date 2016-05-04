@@ -1,0 +1,12 @@
+Pods/
+Podfile.lock
+*.xcworkspacedata
+
+*.xcscheme
+
+
+
+
+*.xcbkptlist
+
+

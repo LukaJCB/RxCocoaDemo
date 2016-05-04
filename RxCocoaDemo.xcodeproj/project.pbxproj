@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A16DAFAB1CD8AB0200F27038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DAFAA1CD8AB0200F27038 /* AppDelegate.swift */; };
-		A16DAFAD1CD8AB0200F27038 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DAFAC1CD8AB0200F27038 /* ViewController.swift */; };
+		A16DAFAD1CD8AB0200F27038 /* MovieDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DAFAC1CD8AB0200F27038 /* MovieDetailController.swift */; };
 		A16DAFB01CD8AB0200F27038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16DAFAE1CD8AB0200F27038 /* Main.storyboard */; };
 		A16DAFB21CD8AB0200F27038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16DAFB11CD8AB0200F27038 /* Assets.xcassets */; };
 		A16DAFB51CD8AB0200F27038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16DAFB31CD8AB0200F27038 /* LaunchScreen.storyboard */; };
 		A16DAFC01CD8AB0300F27038 /* RxCocoaDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DAFBF1CD8AB0300F27038 /* RxCocoaDemoTests.swift */; };
+		A16DAFD11CD8B61600F27038 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DAFD01CD8B61600F27038 /* Movie.swift */; };
+		A16DAFD51CD9083B00F27038 /* MovieTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DAFD41CD9083B00F27038 /* MovieTableController.swift */; };
+		A16DAFD71CD92C4700F27038 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DAFD61CD92C4700F27038 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,7 @@
 /* Begin PBXFileReference section */
 		A16DAFA71CD8AB0200F27038 /* RxCocoaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxCocoaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16DAFAA1CD8AB0200F27038 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A16DAFAC1CD8AB0200F27038 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A16DAFAC1CD8AB0200F27038 /* MovieDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailController.swift; sourceTree = "<group>"; };
 		A16DAFAF1CD8AB0200F27038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A16DAFB11CD8AB0200F27038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A16DAFB41CD8AB0200F27038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		A16DAFBB1CD8AB0300F27038 /* RxCocoaDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxCocoaDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16DAFBF1CD8AB0300F27038 /* RxCocoaDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCocoaDemoTests.swift; sourceTree = "<group>"; };
 		A16DAFC11CD8AB0300F27038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A16DAFD01CD8B61600F27038 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		A16DAFD41CD9083B00F27038 /* MovieTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableController.swift; sourceTree = "<group>"; };
+		A16DAFD61CD92C4700F27038 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				A16DAFAA1CD8AB0200F27038 /* AppDelegate.swift */,
-				A16DAFAC1CD8AB0200F27038 /* ViewController.swift */,
+				A16DAFAC1CD8AB0200F27038 /* MovieDetailController.swift */,
 				A16DAFAE1CD8AB0200F27038 /* Main.storyboard */,
 				A16DAFB11CD8AB0200F27038 /* Assets.xcassets */,
 				A16DAFB31CD8AB0200F27038 /* LaunchScreen.storyboard */,
 				A16DAFB61CD8AB0200F27038 /* Info.plist */,
+				A16DAFD01CD8B61600F27038 /* Movie.swift */,
+				A16DAFD41CD9083B00F27038 /* MovieTableController.swift */,
+				A16DAFD61CD92C4700F27038 /* MovieTableViewCell.swift */,
 			);
 			path = RxCocoaDemo;
 			sourceTree = "<group>";
@@ -197,8 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A16DAFAD1CD8AB0200F27038 /* ViewController.swift in Sources */,
+				A16DAFAD1CD8AB0200F27038 /* MovieDetailController.swift in Sources */,
 				A16DAFAB1CD8AB0200F27038 /* AppDelegate.swift in Sources */,
+				A16DAFD71CD92C4700F27038 /* MovieTableViewCell.swift in Sources */,
+				A16DAFD51CD9083B00F27038 /* MovieTableController.swift in Sources */,
+				A16DAFD11CD8B61600F27038 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +402,7 @@
 				A16DAFC61CD8AB0300F27038 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A16DAFC71CD8AB0300F27038 /* Build configuration list for PBXNativeTarget "RxCocoaDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +411,7 @@
 				A16DAFC91CD8AB0300F27038 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
