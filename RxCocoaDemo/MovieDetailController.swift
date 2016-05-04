@@ -27,7 +27,7 @@ class MovieDetailController: UIViewController {
             .bindTo(ratingSlider.rx_value)
             .dispose()
         
-        let rating = ratingSlider.rx_value.map { Float(round(10 * $0)/10) }
+        let rating = ratingSlider.rx_value.map { round(10 * $0)/10 }
         
         rating
             .bindTo(movie!.rating)

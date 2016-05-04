@@ -22,7 +22,7 @@ class MovieTableController: UIViewController {
         super.viewDidLoad()
         
         
-        let movies = initState(addButton.rx_tap)
+        let movies = initState(addButton)
         
         
         movies.bindTo(movieTable.rx_itemsWithCellIdentifier("movieCell", cellType: MovieTableViewCell.self)) (configureCell: setupCell)
@@ -61,9 +61,9 @@ class MovieTableController: UIViewController {
         Movie(title: Variable("Twilight"), rating: Variable(Float(1.0)))
     ]
     
-    func initState(addMovie: ControlEvent<Void>) -> Observable<[Movie]> {
+    func initState(addButton: UIBarButtonItem) -> Observable<[Movie]> {
         
-        let add = addMovie
+        let add = addButton.rx_tap
             .map{_ in  Movie()}
             .scan(initialMovies, accumulator: { (acc,cur) in
                 var copy = acc

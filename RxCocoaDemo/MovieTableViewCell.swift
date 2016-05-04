@@ -14,4 +14,7 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
   
     var movie: Movie?
+    
+    
+    
 }
